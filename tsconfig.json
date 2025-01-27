@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+      "resolveJsonModule": true,
+      "target": "es2016",
+      "module": "ESNext",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "skipLibCheck": true,
+      "rootDir": "./src",
+      "outDir": "./dist",
+      "allowSyntheticDefaultImports": true,
+      "allowImportingTsExtensions": false
+    },
+    "ts-node": {
+      "experimentalSpecifierResolution": "node",
+      "transpileOnly": true,
+      "esm": true
+    },
+    // fix ts-node/esm pathToFilURL error
+    "experimentalSpecifierResolution": "node",
+    "transpileOnly": true,
+    "esm": true,
+    // end of fix
+    "include": ["./src"],
+    "exclude": ["**/*.spec.ts", "/src/seed/**/*", "/src/test/**/*"]
+  }
